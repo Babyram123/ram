@@ -1,0 +1,32 @@
+pword[replace_index+1:] 
+returnpword
+def main(): numPasswords = int(input("How many passwords do you want to generate?
+Password Lengths=[] print("Minimum length of password should be 3") for i in range(num Passwords):
+length=int(input("Enter the length of Password#"+str(i+1)+":")) if
+length<3: length = 3
+password Lengths.append(length)
+Password=generate Password(password Lengths) for i in range(num Passwords):
+print("Password#"+str(i+1)+"="+Password[i]) main()
+Recognizer = sr.Recognizer() engine = pyttsx3.init() def speak(text): engine.say(text) engine.runAndWait()
+def listen():
+with sr.Microphone() as source: print("Listening...") recognizer.adjust_for_ambient_noise(source) audio = recognizer.listen(source) try:
+print("Recognizing...") query=recognizer.recognize_google(audio) print("User said:", query) return query.lower()
+except sr.UnknownValueError:
+print("Sorry,I didn't get that.Please try again.") return ""
+except sr.Request Error as e:
+print("Could not request results from Google Speech Recognition service;
+def main(): numPasswords = int(input("How many passwords do you want to generate?
+Password Lengths=[] print("Minimum length of password should be 3") for i in range(num Passwords):
+length=int(input("Enter the length of Password#"+str(i+1)+":")) if
+length<3: length = 3
+password Lengths.append(length)
+Password=generate Password(password Lengths) for i in range(num Passwords):
+print("Password#"+str(i+1)+"="+Password[i]) main()
+Recognizer = sr.Recognizer() engine = pyttsx3.init() def speak(text): engine.say(text) engine.runAndWait()
+def listen():
+with sr.Microphone() as source: print("Listening...") recognizer.adjust_for_ambient_noise(source) audio = recognizer.listen(source) try:
+print("Recognizing...") query=recognizer.recognize_google(audio) print("User said:", query) return query.lower()
+except sr.UnknownValueError:
+print("Sorry,I didn't get that.Please try again.") return ""
+except sr.Request Error as e:
+print("Could not request results from Google Speech Recognition service;
